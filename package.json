@@ -1,0 +1,15 @@
+{
+    "name": "node-sass-sourcemap-test",
+    "version": "1.0.0",
+    "description": "",
+    "scripts": {
+        "build": "npm run clean && npm run copy && node ./scripts/sass.js",
+        "clean": "rm -rf dist",
+        "copy": "mkdir -p dist && cp ./src/index.html ./dist/"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "node-sass": "^4.5.3"
+    }
+}
