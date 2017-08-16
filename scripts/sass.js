@@ -12,7 +12,6 @@ sass.render(options, function (err, result) {
     if (err) {
         console.error('Error: ' + err.toString())
     } else {
-        console.log(result);
         fs.writeFileSync('./dist/index.css', result.css);
         fs.writeFileSync('./dist/index.css.map', result.map);
         console.log('OK');
